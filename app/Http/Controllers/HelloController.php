@@ -31,6 +31,6 @@ class HelloController extends Controller
     public function other(){
         global $head, $style, $body, $end;
 
-        
+
     }
 }

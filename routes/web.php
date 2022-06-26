@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/hello/{id?}/{pass?}','App\Http\Controllers\HelloController@index');
+// 最初のログインルート読み込み
+Auth::routes();
+
+// homeだけど/loginに繋がる
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
