@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('/welcome');
+});
 
 // 最初のログインルート読み込み
 Auth::routes();
 
-// homeだけど/loginに繋がる
+// login後のルーティング
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
