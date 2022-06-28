@@ -17,6 +17,7 @@
                     {{ __('You are logged in!') }}
                 </div>
             </div>
+            <div>一覧画面にいく</div>
         </div>
     </div>
 </div>
