@@ -21,5 +21,11 @@ Route::get('/', function () {
 // 最初のログインルート読み込み
 Auth::routes();
 
-// login後のルーティング
+// login
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// topページへ
+Route::get('/top',[App\Http\Controllers\HomeController::class,'top'])->name('top');
+
+
+

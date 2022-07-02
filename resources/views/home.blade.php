@@ -14,10 +14,12 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('ログインに成功しました') }}
                 </div>
             </div>
-            <div>一覧画面にいく</div>
+            <div>
+                <a href="{{ route('top')}}">トップページへ >>
+            </div>
         </div>
     </div>
 </div>

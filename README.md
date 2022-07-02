@@ -1,3 +1,11 @@
+＜実装の際に気をつけること＞
+・実装時は必ずissueに沿って実装を進める
+・マイグレーションファイル名に"to"入れない。
+  ┗toの後はテーブル名として扱われて、思っている動作をしない可能性がある。
+
+  
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
