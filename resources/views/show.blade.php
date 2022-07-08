@@ -26,7 +26,7 @@
 
         <div class="recipe_area">
             <div class="recipe"><span class="bi bi-flower3"></span> 作り方：</div>
-            <div>{{ $menu->recipe }}</div>
+            <div>{!! nl2br(e($menu->recipe)) !!}</div>
         </div>
 
         <div class="items">
