@@ -1,0 +1,115 @@
+/* 全体 */
+.rapper{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 記入箇所全体 */
+input,select,textarea{
+    border-radius: 5px 5px 5px 5px;
+    border-width: 0.1px;
+    border-color:grey;
+}
+
+/* タイトル */
+.add_menu_title{
+    margin: 30px 0 35px 0;
+    padding-bottom: 5px;
+    border-bottom:#EEEEEE groove 3px;
+    /* padding-top: 30px;
+    padding-bottom: 60px; */
+}
+
+.bi-pencil-square{
+    color:dodgerblue;
+}
+
+/* 種類エリア */
+.genre_area{
+    width: 100%;
+    display: flex;
+    margin-bottom: 35px;
+
+}
+
+.genre_area_inner1{
+    padding-right: 30px;
+}
+
+.genre1,.genre2{
+    padding-bottom: 5px;
+}
+
+
+/* メニューエリア */
+.menu_area{
+    padding-right: 300px;
+    margin-bottom: 35px;
+}
+
+.menu_input{
+    width: 100%;
+}
+
+.menu_name{
+    padding-bottom: 5px;
+}
+
+
+/* 作り方エリア */
+.recipe_area{
+    margin-bottom: 3px;
+}
+
+.recipe_input{
+    width: 100%;
+    height: 380px;
+    vertical-align: text-top;
+}
+
+.recipe{
+    padding-bottom: 5px;
+}
+
+
+/* アイテムエリア */
+.items{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+
+.cancel_button{
+    margin-right: 10px;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 0.1px;
+    border-color: #BBBBBB;
+    background-color:#CCCCCC;
+}
+
+.cancel_button:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+	transition: background-color 1s;
+}
+
+.regist_button{
+    width: 90px;
+    color: #007700;
+    margin-left: 10px;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 2px;
+    border-color: #009900;
+    background-color:white;
+}
+
+.regist_button:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+	transition: background-color 1s;
+}
+
+.bi-flower3{
+    color: #FF9999;
+}
+

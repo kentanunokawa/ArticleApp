@@ -1,0 +1,31 @@
+
+.complete_message{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+h4{
+    text-align: center;
+}
+
+
+.back_link{
+    width: 150px;
+    margin: 0 auto;
+}
+
+
+.back_index_button{
+    margin-right: 10px;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 0.1px;
+    border-color: #BBBBBB;
+    background-color:#CCCCCC;
+}
+
+.back_index_button:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+	transition: background-color 1s;
+}
