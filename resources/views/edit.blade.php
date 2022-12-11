@@ -9,21 +9,28 @@
         <h4 class="add_menu_title"><span class="bi bi-pencil-square"></span>  お料理内容編集</h4>
         <form action="{{ route('update' , $menu->id) }}" method="POST" class="form_group">
             @csrf
+            <input type="hidden" value="">
             <div class="genre_area">
                 <div class="genre_area_inner1">
                     <div class="genre1">種類①：</div>
                     <select class="genre_pulldown" name="genre1">
-                        @foreach ($genre1 as $genre)
-                            <option value="{{ $genre }}">{{ $menu->genre1 }}</option>
+                        @foreach ($genre1 as $key => $genre)
+                            @if ($key == 0)
+                            <option value="{{ $menu->genre1 }}" selected hidden>{{ $menu->genre1 }}</option>
+                            @endif
+                            <option value="{{ $genre }}">{{ $genre }}</option>
                         @endforeach
                     </select>
                 </div>
                 <div class="genre_area_inner2">
                     <div class="genre2">種類②：</div>
                     <select class="genre_pulldown" name="genre2">
-                        @foreach ($genre2 as $genre)
-                            <option value="{{ $genre }}">{{ $menu->genre2 }}</option>
-                        @endforeach
+                        @foreach ($genre2 as $key => $genre)
+                        @if ($key == 0)
+                        <option value="{{ $menu->genre2 }}" selected hidden>{{ $menu->genre2 }}</option>
+                        @endif
+                        <option value="{{ $genre }}">{{ $genre }}</option>
+                    @endforeach
                     </select>
                 </div>
             </div>

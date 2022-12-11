@@ -20,7 +20,7 @@ input,select,textarea{
     padding-bottom: 60px; */
 }
 
-.bi-pencil-square{
+.bi-receipt{
     color:dodgerblue;
 }
 
@@ -58,7 +58,7 @@ input,select,textarea{
 
 /* 作り方エリア */
 .recipe_area{
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .recipe_input{
@@ -77,34 +77,60 @@ input,select,textarea{
     font-size: 15px;
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+    padding-bottom: 30px;
+    border-bottom: #CCCCCC solid 0.5px;
 }
 
 
-.cancel_button{
-    margin-right: 10px;
+.delete_area{
+    height: 0px;
+    text-align: center;
+}
+
+.delete_message{
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+
+.delete_button{
+    width: 70px;
+    margin-top: 10px;
     border-radius: 5px 5px 5px 5px;
     border-width: 0.1px;
     border-color: #BBBBBB;
     background-color:#CCCCCC;
 }
 
-.cancel_button:hover {
+.delete_button:hover {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
 	transition: background-color 1s;
 }
 
-.regist_button{
+.edit_button{
     width: 90px;
     color: #007700;
-    margin-left: 10px;
+    margin-left: 30px;
     border-radius: 5px 5px 5px 5px;
     border-width: 2px;
     border-color: #009900;
     background-color:white;
 }
 
-.regist_button:hover {
+.edit_button:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+	transition: background-color 1s;
+}
+
+.back_button{
+    color: #0000BB;
+    margin-right: 30px;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 2px;
+    border-color: #0000DD;
+    background-color:white;
+}
+
+.back_button:hover {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
 	transition: background-color 1s;
 }
@@ -112,4 +138,3 @@ input,select,textarea{
 .bi-flower3{
     color: #FF9999;
 }
-

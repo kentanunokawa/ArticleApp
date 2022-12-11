@@ -1,0 +1,29 @@
+{
+    "period" : [
+        {
+            "name" : "recruit",
+            "startDate" : "20221222",
+            "endDate" : "20221227",
+            "startTime" : "",
+            "endTime" : ""
+        },
+
+        {
+            "name" : "vote",
+            "startDate" : "20230118",
+            "endDate" : "20230127",
+            "startTime" : "",
+            "endTime" : ""
+        },
+
+        {
+            "name" : "annouce",
+            "startDate" : "20230212",
+            "endDate" : "20230220",
+            "startTime" : "",
+            "endTime" : "17:00"
+        }
+    ]
+}
+
+

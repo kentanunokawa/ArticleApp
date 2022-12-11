@@ -8,10 +8,10 @@
     <div class="head_area">
         <h6><span class="bi bi-search"></span>  検索</h6>
         <div class="head_area-flex">
-            <form class="search" action="" method="POST" >
-                <input type="text">
-                <input type="submit" value="絞り込む">
-                <div>※まだ検索は実装できてないよん。。。</div>
+            <form class="search" action="{{ route('search') }}" method="GET" >
+                <input type="text" name="keyword">
+                <input type="submit" value="検索">
+                <div>※まだ検索は実装できてない</div>
             </form>
             <img src="" alt="">
         </div>
@@ -42,8 +42,10 @@
                     <td>{{ $menu->updated_at->format('Y/m/d') }}</td>
                 </tr>
             @endforeach
+
         </table>
     </div>
+    <div class="pagination">{{ $menus->links() }}</div>
 </div>
 @endsection
 @section('contentFotter')

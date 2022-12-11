@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('css/addMenu.css') }}">
+<link rel="stylesheet" href="{{ asset('css/show.css') }}">
 <link href="{{ asset('js/show.js') }}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
@@ -7,7 +7,7 @@
 @section('content')
 <div class="rapper">
     <div class="rapper_inner">
-        <h4 class="add_menu_title"><span class="bi bi-pencil-square"></span>  作り方</h4>
+        <h4 class="add_menu_title"><span class="bi bi-receipt"></span>  作り方</h4>
         <div class="genre_area">
             <div class="genre_area_inner1">
                 <div class="genre1">種類①：</div>
@@ -30,9 +30,11 @@
         </div>
 
         <div class="items">
-            <a href="{{ route('delete',$menu->id) }}"><button class="delete_button" value="">削除</button></a>
-            <a href="{{ route('edit',$menu->id) }}"><button class="edit_btn" value="">編集</button></a>
+            <a href="{{ route('top') }}"><button class="back_button" value="">一覧に戻る</button></a>
+            <a href="{{ route('edit',$menu->id) }}"><button class="edit_button" value="">編集</button></a>
         </div>
+        <p class="delete_message">※この作業は戻せない</p>
+        <p class="delete_area"><a href="{{ route('delete',$menu->id) }}"><button class="delete_button" value="">削除</button></a></p>
     </div>
 </div>
 @endsection

@@ -13,7 +13,10 @@
                 <div class="genre_area_inner1">
                     <div class="genre1">種類①：</div>
                     <select class="genre_pulldown" name="genre1">
-                        @foreach ($genre1 as $genre)
+                        @foreach ($genre1 as $key => $genre)
+                            @if ($key == 0)
+                            <option value="" selected hidden>選択</option>
+                            @endif
                             <option value="{{ $genre }}">{{ $genre }}</option>
                         @endforeach
                     </select>
@@ -21,7 +24,10 @@
                 <div class="genre_area_inner2">
                     <div class="genre2">種類②：</div>
                     <select class="genre_pulldown" name="genre2">
-                        @foreach ($genre2 as $genre)
+                        @foreach ($genre2 as $key => $genre)
+                            @if ($key == 0)
+                            <option value="" selected hidden>選択</option>
+                            @endif
                             <option value="{{ $genre }}">{{ $genre }}</option>
                         @endforeach
                     </select>
@@ -30,12 +36,12 @@
 
             <div class="menu_area">
                 <div class="menu_name"><span class="bi bi-flower3"></span> メニュー名称：</div>
-                <input name="menu" type="text" class="menu_input" placeholder="お料理名を書いてね">
+                <input name="menu" type="text" class="menu_input" placeholder="例：キーマカレー">
             </div>
 
             <div class="recipe_area">
                 <div class="recipe"><span class="bi bi-flower3"></span> 作り方：</div>
-                <textarea name="recipe" class="recipe_input" placeholder="作り方を書いてね"></textarea>
+                <textarea name="recipe" class="recipe_input" placeholder="例：醤油 大さじ1杯"></textarea>
             </div>
 
             <div class="items">
