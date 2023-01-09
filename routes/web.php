@@ -21,9 +21,10 @@ Route::get('/', function () {
     return view('/welcome');
 });
 
-// 最初のログインルート読み込み
+// make:authで作成されたログイン機能のルーティング
 Auth::routes();
 
+// 開発で作成したルーティング
 Route::group(['middleware'=>'auth'],function(){
     // login
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -31,7 +32,7 @@ Route::group(['middleware'=>'auth'],function(){
     // topページへ
     Route::get('/top',[App\Http\Controllers\MenuController::class,'index'])->name('top');
     // Route::get('/top', function(){
-    //     // pagenationの現在の番号を取得
+    // pagenationの現在の番号を取得
     //     $currentPage = LengthAwarePaginator::resolveCurrentPage();
     //     return [App\Http\Controllers\MenuController::class,'index'];
     // })->name('top');

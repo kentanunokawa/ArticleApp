@@ -51,5 +51,14 @@ class test {
         }
     }
 
+    public function elect(){
+        $getJsonFIle = json_decode(file_get_contents("/Applications/MAMP/htdocs/articleApp/app/Http/json/elect.json"),true);
+        $periodList = $getJsonFIle['period'];
+
+        $getDateTime = new DateTime();
+        var_dump($getDateTime);
+        exit;
+    }
+
 }
 
