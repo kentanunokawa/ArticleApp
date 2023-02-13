@@ -18,11 +18,33 @@
     color: dodgerblue;
 }
 
-/* 検索エリアのフレックス */
-.head_area-flex{
+/* 検索エリア */
+#search_icon{
+    padding: 5px;
+}
+
+#search_bar{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #ddd;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#keyword{
+    width: 80%;
+    border: none;
+    outline: none;
+    background-color: #ddd;
+    box-sizing: border-box;
+}
+
+
+/* .head_area-flex{
     display: flex;
     justify-content: space-between;
-}
+} */
 
 /* メインエリアのフレックス */
 .main_area-flex{

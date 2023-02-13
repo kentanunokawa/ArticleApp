@@ -7,15 +7,12 @@
 @section('content')
 <div class="rapper">
     <div class="head_area">
-        <h6><span class="bi bi-search"></span>  検索</h6>
-        <div class="head_area-flex">
-            <form class="search" action="{{ route('search') }}" method="GET" >
-                <input type="text" name="keyword">
-                <input type="submit" value="検索">
-                <div>※まだ検索は実装できてない</div>
-            </form>
-            <img src="" alt="">
-        </div>
+        <form class="search" action="{{ route('search') }}" method="GET" >
+            <div id="search_bar">
+                <i id="search_icon" class="bi bi-search"></i>
+                <input id="keyword" type="text" class="keyword" name="keyword" placeholder="キーワードを入力してください。">
+            </div>
+        </form>
     </div>
     <div class="main_area">
         <div class="main_area-flex">

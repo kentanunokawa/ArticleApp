@@ -81,7 +81,7 @@
 
         <footer>
             @yield('contentFotter')
-            <script src="{{ asset('js/jquery-3.6.2.min.js') }}"></script>
+            {{-- <script src="{{ asset('js/jquery-3.6.2.min.js') }}"></script> --}}
         </footer>
     </div>
 </body>

@@ -11040,7 +11040,10 @@ var __webpack_exports__ = {};
   !*** ./resources/js/top.js ***!
   \*****************************/
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-$(function () {});
+$(function () {
+  // 検索バーの見た目の変更
+  $("#test_btn").on('focus', function () {});
+});
 })();
 
 /******/ })()
